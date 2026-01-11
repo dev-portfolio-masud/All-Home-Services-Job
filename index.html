@@ -1,0 +1,448 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <meta name="description" content="A professional web project">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="">
+
+      <!-- Alpine.js - Load first -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      
+      <!-- Font Links -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+      <title>Professional Website</title>
+      <!-- SEO Description -->
+      <meta name="description" content="A professional web project">
+
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      
+      <!-- Core CSS and Scripts -->
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+      <!-- Project-specific styles -->
+      <style>
+        /* Base styles */
+        :root {
+          --primary-color: #ED2E28;
+          --secondary-color: #1a1a1a;
+          --accent-color: ;
+        }
+
+        /* Strict no-scrollbar rules */
+        * {
+          -ms-overflow-style: none !important;  /* IE and Edge */
+          scrollbar-width: none !important;     /* Firefox */
+        }
+        *::-webkit-scrollbar {
+          display: none !important;             /* Chrome, Safari and Opera */
+        }
+
+        /* Typography */
+        h1, h2, h3, h4, h5, h6 {
+          font-family: Inter, Inter, system-ui, sans-serif;
+        }
+        body {
+          font-family: Inter, Inter, system-ui, sans-serif;
+        }
+
+        /* Interactive elements */
+        .interactive-element {
+          transition: all 0.3s ease;
+        }
+        .interactive-element:hover {
+          transform: translateY(-2px);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 8px;
+          height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out;
+        }
+      </style>
+
+      <!-- Dynamic Meta Tags -->
+      <meta name="description" content="">
+      <meta name="keywords" content="">
+      <meta name="robots" content="">
+      <meta property="og:title" content="">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:locale" content="en_US">
+      <meta property="og:site_name" content="Professional Website">
+      
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="">
+
+      <!-- Header Scripts -->
+      <script id="header-scripts">
+        // This script tag will be replaced with actual scripts.head content
+        if (window.scripts && window.scripts.head) {
+          document.getElementById('header-scripts').outerHTML = window.scripts.head;
+        }
+      </script>
+
+      <!-- Project Configuration -->
+      <script>
+        window.projectConfig = {
+          name: 'Professional Website',
+          type: '',
+          settings: {
+            colors: {
+              primary: '#ED2E28',
+              secondary: '#1a1a1a',
+              accent: ''
+            },
+            fonts: {
+              primary: 'Inter',
+              secondary: 'Inter'
+            }
+          }
+        };
+      </script>
+   <style>
+        [data-section-id] {
+          display: none;
+        }
+        [data-section-id]:first-child {
+          display: block;
+        }
+      </style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+   <body class="antialiased text-gray-900 bg-white">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Content will be injected here by the build process -->
+      <mountpoint><div id="RolloutPageContent"><nav class="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-200 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex-shrink-0">
+        <a href="#hero" class="text-2xl font-bold text-neutral-900">All Home Services Job</a>
+      </div>
+      
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#hero" class="text-neutral-700 hover:text-[#ED2E28] px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+          <a href="#about" class="text-neutral-700 hover:text-[#ED2E28] px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+          <a href="#services" class="text-neutral-700 hover:text-[#ED2E28] px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+          <a href="#contact" class="text-neutral-700 hover:text-[#ED2E28] px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+          <a href="/privacy" class="text-neutral-700 hover:text-[#ED2E28] px-3 py-2 rounded-md text-sm font-medium transition-colors">Privacy & Pollici</a>
+        </div>
+      </div>
+      
+      <div class="md:hidden">
+        <button type="button" id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-neutral-700 hover:text-[#ED2E28] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#ED2E28]">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="md:hidden hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+      <a href="#hero" class="text-neutral-700 hover:text-[#ED2E28] block px-3 py-2 rounded-md text-base font-medium">Home</a>
+      <a href="#about" class="text-neutral-700 hover:text-[#ED2E28] block px-3 py-2 rounded-md text-base font-medium">About</a>
+      <a href="#services" class="text-neutral-700 hover:text-[#ED2E28] block px-3 py-2 rounded-md text-base font-medium">Services</a>
+      <a href="#contact" class="text-neutral-700 hover:text-[#ED2E28] block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      <a href="/privacy" class="text-neutral-700 hover:text-[#ED2E28] block px-3 py-2 rounded-md text-base font-medium">Privacy & Pollici</a>
+    </div>
+  </div>
+</nav>
+<section id="hero" class="relative bg-gradient-to-br from-neutral-900 to-neutral-800 text-white">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1620838883342-ca19cf8448d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8aGFuZHltYW4lMjBwcm9mZXNzaW9uYWwlMjB3b3JraW5nfGVufDF8MHx8fDE3Njc1MzMwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Professional handyman working" class="w-full h-full object-cover opacity-30">
+  </div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="text-center lg:text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          Find Reliable All Home Services Jobs Near You
+        </h1>
+        <p class="text-lg sm:text-xl text-neutral-300 mb-8 max-w-2xl mx-auto lg:mx-0">
+          Flexible work hours, competitive pay, and immediate opportunities in your local area. Start earning today with trusted home service jobs.
+        </p>
+        <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg" onclick="document.getElementById('form').scrollIntoView({behavior: 'smooth'})">
+          <a href="https://tinyurl.com/n99pcyvs">Claim Now</a>
+        </button>
+      </div>
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1451933371645-a3029668b979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8aGFuZHltYW4lMjBwcm9mZXNzaW9uYWwlMjB3b3JraW5nfGVufDF8MHx8fDE3Njc1MzMwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Craft project" class="w-full h-48 object-cover rounded-lg">
+        <img src="https://images.unsplash.com/photo-1741388222137-c0d3007ec173?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8aGFuZHltYW4lMjBwcm9mZXNzaW9uYWwlMjB3b3JraW5nfGVufDF8MHx8fDE3Njc1MzMwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Electrician working indoors" class="w-full h-48 object-cover rounded-lg">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-neutral-900 mb-4">About</h2>
+      <p class="text-xl text-neutral-700 max-w-3xl mx-auto">All Home Services Job connects skilled professionals with flexible opportunities across the country</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-8">
+        <div class="bg-white p-6 rounded-lg border">
+          <h3 class="text-2xl font-semibold mb-4">Who We Serve</h3>
+          <p class="text-neutral-700 mb-4">Perfect for beginners and pros alike. Work when you want, where you want.</p>
+          <ul class="space-y-3">
+            <li class="flex items-center"><span class="w-2 h-2 bg-[#ED2E28] rounded-full mr-3"></span>Cleaning & Housekeeping</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-[#ED2E28] rounded-full mr-3"></span>Plumbing & Electrical</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-[#ED2E28] rounded-full mr-3"></span>Handyman & Maintenance</li>
+            <li class="flex items-center"><span class="w-2 h-2 bg-[#ED2E28] rounded-full mr-3"></span>General Household Support</li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="bg-white p-4 rounded-lg text-center border">
+            <h4 class="text-2xl font-bold text-[#ED2E28]">1000+</h4>
+            <p class="text-sm text-neutral-600">Daily Jobs</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg text-center border">
+            <h4 class="text-2xl font-bold text-[#ED2E28]">50</h4>
+            <p class="text-sm text-neutral-600">States</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg text-center border">
+            <h4 class="text-2xl font-bold text-[#ED2E28]">24/7</h4>
+            <p class="text-sm text-neutral-600">Support</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <img src="https://images.unsplash.com/photo-1758874383719-7c801adb7e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Professional at work" class="w-full h-64 object-cover rounded-lg" />
+        
+        <img src="https://images.unsplash.com/photo-1762329403968-9fef42b08a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Home services platform" class="w-full h-48 object-cover rounded-lg" />
+        
+        <img src="https://images.unsplash.com/photo-1755127761410-0c00c398c308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Professional tools" class="w-full h-40 object-cover rounded-lg" />
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-neutral-900 mb-4">Services</h2>
+      <p class="text-xl text-neutral-700 max-w-2xl mx-auto">Connect with homeowners who need your skills</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition-shadow">
+        <img src="https://images.unsplash.com/photo-1758874383719-7c801adb7e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Cleaning Services" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Cleaning Services</h3>
+        <p class="text-neutral-600 mb-4">Residential and commercial cleaning opportunities</p>
+        <span class="text-[#ED2E28] font-semibold">$25-40/hr</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition-shadow">
+        <img src="https://images.unsplash.com/photo-1762329403968-9fef42b08a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Technical Services" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Technical Services</h3>
+        <p class="text-neutral-600 mb-4">Plumbing, electrical, and HVAC opportunities</p>
+        <span class="text-[#ED2E28] font-semibold">$50-80/hr</span>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition-shadow">
+        <img src="https://images.unsplash.com/photo-1755127761410-0c00c398c308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Handyman Services" class="w-full h-48 object-cover rounded-md mb-4" />
+        <h3 class="text-xl font-semibold mb-2">Handyman Services</h3>
+        <p class="text-neutral-600 mb-4">Assembly, repairs, and maintenance work</p>
+        <span class="text-[#ED2E28] font-semibold">$35-60/hr</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-neutral-900 mb-4">Contact</h2>
+      <p class="text-xl text-neutral-700 max-w-2xl mx-auto">Ready to start earning? Get in touch today</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <div class="space-y-8">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Apply Now for All Home Services Jobs</h3>
+          <p class="text-neutral-700 mb-6">Fill out the form and start earning within 24-48 hours</p>
+        </div>
+
+        <form id="contact-form" class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium text-neutral-700 mb-2">Full Name *</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ED2E28] focus:border-transparent" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-neutral-700 mb-2">Email Address *</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ED2E28] focus:border-transparent" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-neutral-700 mb-2">Phone Number *</label>
+            <input type="tel" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ED2E28] focus:border-transparent" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-neutral-700 mb-2">Preferred Job Type</label>
+            <select name="job-type" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ED2E28] focus:border-transparent">
+              <option>Cleaning Services</option>
+              <option>Plumbing</option>
+              <option>Electrical</option>
+              <option>Handyman</option>
+              <option>Maintenance</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-neutral-700 mb-2">Location</label>
+            <input type="text" name="location" placeholder="City, State" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#ED2E28] focus:border-transparent" />
+          </div>
+
+          <button type="submit" class="w-full bg-[#ED2E28] hover:bg-[#c12723] text-white font-bold py-4 px-6 rounded-lg transition-colors">
+            Submit Application
+          </button>
+        </form>
+
+        <div id="success-message" class="hidden bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg">
+          Thank you! We'll contact you within 24 hours.
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <img src="https://images.unsplash.com/photo-1758874383719-7c801adb7e5c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8MXx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Contact support" class="w-full h-64 object-cover rounded-lg" />
+        
+        <div class="bg-white p-6 rounded-lg border">
+          <h4 class="text-lg font-semibold mb-4">Need Help?</h4>
+          <p class="text-neutral-700 mb-4">Our team is ready to assist you</p>
+          <div class="space-y-2">
+            <p class="text-sm"><strong>Email:</strong> support@allhomeservices.com</p>
+            <p class="text-sm"><strong>Phone:</strong> 1-800-HOME-JOB</p>
+            <p class="text-sm"><strong>Hours:</strong> 24/7 Support Available</p>
+          </div>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1762329403968-9fef42b08a49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8Mnx8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Support team" class="w-full h-48 object-cover rounded-lg" />
+        
+        <img src="https://images.unsplash.com/photo-1755127761410-0c00c398c308?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2MzQ2fDB8MXxzZWFyY2h8M3x8aG9tZSUyMHNlcnZpY2UlMjBwcm9mZXNzaW9uYWx8ZW58MXwwfHx8MTc2NzUyOTgwMHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Contact methods" class="w-full h-32 object-cover rounded-lg" />
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="Footer" class="bg-neutral-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="col-span-1 md:col-span-2">
+        <h3 class="text-2xl font-bold mb-4">All Home Services Job</h3>
+        <p class="text-gray-400 mb-4">Connecting skilled professionals with flexible home service opportunities nationwide</p>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <div class="space-y-2">
+          <a href="#hero" class="block text-gray-400 hover:text-white transition-colors">Home</a>
+          <a href="#about" class="block text-gray-400 hover:text-white transition-colors">About Us</a>
+          <a href="#contact" class="block text-gray-400 hover:text-white transition-colors">Contact Us</a>
+          <a href="/privacy" class="block text-gray-400 hover:text-white transition-colors">Privacy & Pollici</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+        <div class="space-y-2">
+          <a href="/privacy" class="block text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms" class="block text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-neutral-800 mt-8 pt-8 text-center">
+      <p class="text-gray-400">&copy; 2024 All Home Services Job. All rights reserved.</p>
+    </div>
+  </div>
+</footer></div></mountpoint>
+
+      <!-- Core functionality scripts -->
+      <script>
+        // Initialize interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+          // Add interactive behaviors
+          const interactiveElements = document.querySelectorAll('.interactive-element');
+          interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+              element.classList.add('hover');
+            });
+            element.addEventListener('mouseleave', () => {
+              element.classList.remove('hover');
+            });
+          });
+
+          // Initialize any dynamic content
+          const dynamicContent = document.querySelectorAll('[data-dynamic]');
+          dynamicContent.forEach(content => {
+            // Add fade-in animation
+            content.classList.add('fade-in');
+          });
+        });
+
+        // Handle navigation
+        function handleNavigation(event) {
+          const link = event.currentTarget;
+          if (link.hasAttribute('data-nav')) {
+            event.preventDefault();
+            const target = link.getAttribute('data-nav');
+            document.querySelector(target).scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+
+        // Initialize navigation
+        document.querySelectorAll('[data-nav]').forEach(link => {
+          link.addEventListener('click', handleNavigation);
+        });
+      </script>
+
+      <!-- Body Scripts -->
+      <script id="body-scripts">
+        // This script tag will be replaced with actual scripts.body content
+        if (window.scripts && window.scripts.body) {
+          document.getElementById('body-scripts').outerHTML = window.scripts.body;
+        }
+      </script>
+   </body>
+</html>
